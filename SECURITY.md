@@ -7,7 +7,7 @@ media libraries in a report.
 
 The current stable release of each active project receives security fixes.
 Jellyfin 12 is the supported host line for JellySin plugins. Fixes receive new
-versions; published artifact bytes and catalog history remain immutable.
+versions; published artifact bytes and Plugin Repository history remain immutable.
 
 Please allow maintainers to assess and fix an unpatched vulnerability before
 publishing exploit details. Ordinary bugs and feature requests belong in issues.

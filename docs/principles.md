@@ -1,7 +1,7 @@
 # Engineering principles
 
-These rules apply to JellySin projects where the relevant behavior exists. A
-catalog does not need playback tests; a Python release tool does not need a web
+These rules apply to JellySin projects where the relevant behavior exists. The
+Plugin Repository does not need playback tests; a Python release tool does not need a web
 framework. Local instructions define stricter language-specific gates.
 
 ## Small, bounded implementations
@@ -55,7 +55,7 @@ Host-provided assemblies never enter plugin archives.
 
 Build plugin releases from their exact tag. Produce deterministic archives,
 checksums and an honest software inventory, then verify signed provenance.
-Published bytes and compatible catalog history are immutable. Shared tooling
+Published bytes and compatible Plugin Repository history are immutable. Shared tooling
 stays a build-time dependency and is versioned for multiple independent plugins.
 
 Use PRs, Conventional Commit titles and squash merges. Release-please owns versions
