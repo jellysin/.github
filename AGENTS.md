@@ -5,7 +5,7 @@ This is an organization policy repository, not a plugin source tree.
 
 - Keep rules concrete, measurable and applicable to the language or repository.
 - Preserve the distinction between documented policy and verified live settings.
-- Do not duplicate implementation instructions from plugin-tooling into every project.
+- Do not duplicate implementation instructions from release-helper into every project.
 - Never claim unpublished builds exist or that planned benchmarks have passed.
 - Treat fresh project code as EUPL-1.2; retain third-party notices and data rights.
 - Keep issue forms accessible and avoid requesting secrets, full account data, or session keys.
