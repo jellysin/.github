@@ -1,0 +1,24 @@
+name: Bug report
+description: Report a reproducible problem in a JellySin project.
+body:
+  - type: input
+    id: versions
+    attributes:
+      label: Versions and environment
+      description: Project/plugin version, Jellyfin version, client and operating system.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction and expected behavior
+      description: List the smallest steps that show the issue and what you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and redacted diagnostics
+      description: Include relevant errors. Remove credentials, session keys and private account data.
+    validations:
+      required: true
