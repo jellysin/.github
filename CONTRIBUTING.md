@@ -28,7 +28,7 @@ Changes to profile text, templates, policies and Actions go through the same PR
 flow. CI runs the SHA-pinned repository policy checker and actionlint. Locally:
 
 ```sh
-python ../plugin-tooling/tools.py check-policy
+python ../release-helper/tools.py check-policy
 actionlint
 ```
 

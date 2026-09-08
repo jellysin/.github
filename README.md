@@ -11,5 +11,5 @@ agent instructions; GitHub does not inherit licenses or `AGENTS.md` automaticall
 Read [the engineering principles](docs/principles.md) and CONTRIBUTING.md before
 changing shared rules. Language-specific requirements belong in the repository
 that uses that language. Release tooling lives in
-[plugin-tooling](https://github.com/jellysin/plugin-tooling). Approved installable
+[release-helper](https://github.com/jellysin/release-helper). Approved installable
 builds will be listed in the [Plugin Repository](https://github.com/jellysin/repo).

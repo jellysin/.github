@@ -7,7 +7,7 @@ Plugin Repository. Each plugin owns its code and release cycle.
 
 - [Last.fm](https://github.com/jellysin/plugin-lastfm): music listening,
   favourites, metadata and discovery integration, currently in development.
-- [Plugin tooling](https://github.com/jellysin/plugin-tooling): reproducible packages,
+- [Release helper](https://github.com/jellysin/release-helper): reproducible packages,
   verified releases and Plugin Repository updates.
 - [Plugin Repository](https://github.com/jellysin/repo): one installation source for JellySin plugins.
 
