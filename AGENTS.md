@@ -11,4 +11,5 @@ This is an organization policy repository, not a plugin source tree.
 - Keep issue forms accessible and avoid requesting secrets, full account data, or session keys.
 - Pin Actions to full SHAs, use read-only defaults and explicit job timeouts.
 - Conventional Commit PR titles, squash merges, release-please versioning, strict: false checks.
+- Release automation collects version/changelog PRs only; tags and GitHub releases require a separate explicit maintainer action.
 - Validate documents, JSON, workflow syntax and immutable Action pins before proposing changes.

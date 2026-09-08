@@ -58,8 +58,11 @@ checksums and an honest software inventory, then verify signed provenance.
 Published bytes and compatible Plugin Repository history are immutable. Shared tooling
 stays a build-time dependency and is versioned for multiple independent plugins.
 
-Use PRs, Conventional Commit titles and squash merges. Release-please owns versions
-and changelogs. Required checks use `strict: false`. Automation uses read-only
+Use PRs, Conventional Commit titles and squash merges. Release-please collects
+version and changelog proposals in PRs. Merging changes or release PRs must not
+create tags or GitHub releases; tagging and publication require a separate,
+explicit maintainer action. Plugin and release-helper publication is never
+automatic. Required checks use `strict: false`. Automation uses read-only
 defaults, job-scoped writes and explicit timeouts; untrusted PR code never runs
 with a write token. Explicitly dispatch bot CI where normal events do not recurse.
 

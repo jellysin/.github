@@ -7,7 +7,10 @@ merging gives each reviewed change one release-note entry.
 
 JellySin plugins target Jellyfin 12. Keep plugin API compatibility separate from
 plugin SemVer. Shared release tooling is versioned independently and consumed at
-reviewed immutable SHAs. Release-please owns versions and changelogs.
+reviewed immutable SHAs. Release-please collects merged changes into version and
+changelog PRs. Ordinary main merges and release PR merges do not create tags or
+GitHub releases. Selecting a version for tagging and publication requires a
+separate, explicit maintainer action.
 
 Follow [the engineering baseline](https://github.com/jellysin/.github/blob/main/docs/principles.md)
 and each repository's local instructions. Requirements from another language or
@@ -34,6 +37,8 @@ actionlint
 
 Run these from this repository with the tooling commit pinned in CI. Check links
 and issue-form labels when editing documents. Report validation that was unavailable.
+This policy repository has no publication workflow; its release automation only
+maintains version and changelog PRs.
 
 Each repository includes the complete EUPL-1.2 text. Contributions must be yours
 to license; keep third-party notices and asset/API data rights distinct from code.
