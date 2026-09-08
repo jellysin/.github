@@ -17,6 +17,10 @@ Required checks use `strict: false`; no branch-up-to-date gate is required. Neve
 bypass checks or weaken a failing gate. Use the built-in repository token for
 automation, with read-only defaults and write permissions scoped to jobs. Bot PR
 checks must be explicitly dispatched when normal events do not trigger them.
+GitHub may additionally require a maintainer to approve a bot-created PR's actual
+workflow run. Review that run and approve it through GitHub; a successful manual
+dispatch does not necessarily satisfy the pending PR check. Keep required checks
+enabled and do not create synthetic passing statuses.
 
 ## Working on this repository
 
