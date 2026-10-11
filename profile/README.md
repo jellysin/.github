@@ -1,6 +1,6 @@
 # JellySin
 
-A little temptation for your media server.
+JellySin: Jellyfin plus sin, a little temptation for your media server; said JELLY-sin.
 
 Independent plugins for **Jellyfin 12**, with shared release tooling and one
 Plugin Repository. Each plugin owns its code and release cycle.

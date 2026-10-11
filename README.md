@@ -1,5 +1,7 @@
 # JellySin community and engineering defaults
 
+JellySin: Jellyfin plus sin, a little temptation for your media server; said JELLY-sin.
+
 This repository holds the organization profile, contribution and security guidance,
 issue forms, and the shared engineering baseline for JellySin's independent
 Jellyfin 12 plugins, build tooling and Plugin Repository.
