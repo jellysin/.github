@@ -1,0 +1,7 @@
+# One exception: remove it as soon as an actionlint release accepts runs-on: ubuntu-26.04
+# without this entry.
+# Reason: actionlint 1.7.12, the newest release, does not yet list the GitHub-hosted
+# ubuntu-26.04 runner, which actions/runner-images lists as generally available.
+self-hosted-runner:
+  labels:
+    - ubuntu-26.04
