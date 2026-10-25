@@ -19,7 +19,7 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 0
-      - uses: jellysin/release-helper/actions/check@043c6288642b0734ba53e46603a02cfdb3ca0014 # v1.2.2
+      - uses: jellysin/release-helper/actions/check@c0f6e472f9ac4da2ccdd10afd0a7a167d938b566 # v1.6.0
       - name: Validate workflows
         env:
           ACTIONLINT_SHA256: 8aca8db96f1b94770f1b0d72b6dddcb1ebb8123cb3712530b08cc387b349a3d8
