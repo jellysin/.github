@@ -53,8 +53,11 @@ The configured workflow path after merging the release PR is:
    tracked source as `github-<version>.tar.gz`, metadata, checksums and SPDX SBOM,
    attest the artifacts and SBOM, and sign the artifacts with keyless Cosign. Its
    publish job verifies signatures and attestations before publishing the prepared
-   draft as a source release. To retry publication, run the same Release workflow
-   on the same tag.
+   draft as a source release. To retry after a failed publication, re-run the
+   failed jobs of the same Release run (Actions, "Re-run failed jobs")
+   within one day, while its build artifact is kept
+   (see [.github/workflows/build-signed.yml](.github/workflows/build-signed.yml));
+   start a fresh Release run on the tag only if no asset was uploaded yet.
 
 Each repository includes the complete EUPL-1.2 text. Contributions must be yours
 to license; keep third-party notices and asset/API data rights distinct from code.
