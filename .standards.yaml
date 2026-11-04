@@ -41,7 +41,7 @@ exceptions:
     path: .github/workflows/release.yml
     category: D
     entered: 2026-10-22
-    reason: 'category D: adoption found the release workflows short of the declared supply chain (SLSA Build Level 3 declared, Level 0 measured; enforce_cosign without a cosign signing step; require_sbom without an SBOM step); raise them as docs/guides/releasing.md in Praetor describes, then remove this entry'
+    reason: 'category D: source release workflows now declare Cosign signing and SBOM attestations, but SLSA Build Level 3 remains unverified; validate a successful release and its builder isolation before removing this entry'
     expires: "2027-01-20"
   - rule: declared-linters
     tool: gitleaks
