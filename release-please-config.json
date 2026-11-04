@@ -1,10 +1,9 @@
 {
-  "last-release-sha": "07df265d19887fa02a7ef49c47705c5dd1a4d3ac",
   "release-type": "simple",
   "include-component-in-tag": false,
   "packages": {
     ".": {
-      "initial-version": "1.0.0",
+      "initial-version": "0.1.0",
       "package-name": "jellysin-community"
     }
   }
