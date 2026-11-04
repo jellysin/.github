@@ -19,7 +19,8 @@ jobs:
     timeout-minutes: 15
     permissions:
       contents: read
-      id-token: write
+      # OIDC permission for keyless signing and attestations; it holds no token value
+      id-token: write # nosemgrep: codacy.yaml.security.hard-coded-tokens
       attestations: write
     outputs:
       artifact: ${{ steps.upload.outputs.artifact-name || format('signed-build-{0}', github.run_id) }}

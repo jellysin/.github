@@ -19,7 +19,8 @@ jobs:
     needs: verify
     permissions:
       contents: read
-      id-token: write
+      # OIDC permission for keyless signing and attestations; it holds no token value
+      id-token: write # nosemgrep: codacy.yaml.security.hard-coded-tokens
       attestations: write
     uses: ./.github/workflows/build-signed.yml
     with:

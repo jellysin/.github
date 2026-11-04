@@ -2,6 +2,7 @@ name: Prepare release
 on:
   workflow_dispatch:
     inputs:
+      #checkov:skip=CKV_GHA_7:tag and commit are validated by release-helper prepare.py approved_version (full SHA, stable semver, ancestor of origin/main)
       tag:
         description: Release tag, v followed by the version the release commit records.
         required: true
