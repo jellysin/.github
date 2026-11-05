@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/jellysin/.github/compare/v0.1.0...v0.1.1) (2026-11-05)
+
+
+### Bug Fixes
+
+* **release:** let this repository's release workflow create its releases ([#45](https://github.com/jellysin/.github/issues/45)) ([1e92384](https://github.com/jellysin/.github/commit/1e923847de914070f719fbae5a518c66c5a0c9f7))
+
 ## 0.1.0 (2026-11-05)
 
 
