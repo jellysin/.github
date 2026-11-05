@@ -35,5 +35,29 @@ actionlint
 Run these from this repository with the tooling commit pinned in CI. Check links
 and issue-form labels when editing documents. Report validation that was unavailable.
 
+## Releasing this repository
+
+The [release automation workflow](.github/workflows/release-automation.yml) manages
+release PRs using [the release-please configuration](release-please-config.json).
+
+The configured workflow path after merging the release PR is:
+
+1. Run [Prepare release](.github/workflows/prepare-release.yml) from `main`. Set
+   `tag` to `v` followed by the merged commit's [version.txt](version.txt) value
+   and `commit` to that merge commit's full SHA. It creates the tag and an
+   unpublished draft with notes from [CHANGELOG.md](CHANGELOG.md), then dispatches
+   [Release](.github/workflows/release.yml) on that tag.
+2. Follow the [Release run](.github/workflows/release.yml): it calls
+   [CI](.github/workflows/ci.yml), then
+   [Build and sign release](.github/workflows/build-signed.yml) to package the
+   tracked source as `github-<version>.tar.gz`, metadata, checksums and SPDX SBOM,
+   attest the artifacts and SBOM, and sign the artifacts with keyless Cosign. Its
+   publish job verifies signatures and attestations before publishing the prepared
+   draft as a source release. To retry after a failed publication, re-run the
+   failed jobs of the same Release run (Actions, "Re-run failed jobs")
+   within one day, while its build artifact is kept
+   (see [.github/workflows/build-signed.yml](.github/workflows/build-signed.yml));
+   start a fresh Release run on the tag only if no asset was uploaded yet.
+
 Each repository includes the complete EUPL-1.2 text. Contributions must be yours
 to license; keep third-party notices and asset/API data rights distinct from code.
