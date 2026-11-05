@@ -9,7 +9,8 @@
 
 ### Notes
 
-* v0.1.0 was published without release assets. 0.1.1 is the first release that carries the signed source archive, its Sigstore bundle and its attestations.
+* v0.1.0 was published without release assets. 0.1.1 is the first release that
+  carries the signed source archive, its Sigstore bundle and its attestations.
 
 ## 0.1.0 (2026-11-05)
 
