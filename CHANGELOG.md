@@ -7,6 +7,10 @@
 
 * **release:** let this repository's release workflow create its releases ([#45](https://github.com/jellysin/.github/issues/45)) ([1e92384](https://github.com/jellysin/.github/commit/1e923847de914070f719fbae5a518c66c5a0c9f7))
 
+### Notes
+
+* v0.1.0 was published without release assets. 0.1.1 is the first release that carries the signed source archive, its Sigstore bundle and its attestations.
+
 ## 0.1.0 (2026-11-05)
 
 
