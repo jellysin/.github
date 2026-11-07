@@ -5,7 +5,13 @@
   "packages": {
     ".": {
       "initial-version": "0.1.0",
-      "package-name": "jellysin-community"
+      "package-name": "jellysin-community",
+      "extra-files": [
+        {
+          "type": "generic",
+          "path": "profile/README.md"
+        }
+      ]
     }
   }
 }
